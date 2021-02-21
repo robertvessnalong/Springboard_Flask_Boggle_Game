@@ -1,0 +1,9 @@
+{% extends "index.j2" %}
+{%block title%}Thank You For Playing{%endblock%} 
+{%block content%}
+<div class="score-container">
+    <h2>Thank You For Playing!</h2>
+    <p>Game has been played {{session['count']}} time(s)</p>
+    <p>Your highest score is {{session['highest_score']}}</p>
+</div>
+{%endblock%}
